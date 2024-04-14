@@ -1,0 +1,254 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - whats up
+    - what's up bot
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: ask_reactnative
+  examples: |
+    - what is react native?
+    - How does react native works?
+    - what can you tell me about react native?
+    - Explain the concept of React Native to me.
+
+
+- intent: ask_definition
+  examples: |
+    - What is [Python](something)?
+    - Define [Python](something)
+    - Can you explain [Python](something)?
+
+- intent: provide_definition
+  examples: |
+    - [Python](something) is a programming language.
+    - It's a programming language.
+    - It's a language used for coding.
+
+  
+- intent: thank
+  examples: |
+    - Thanks you
+    - thank you
+
+- intent: ask_installation
+  examples: |
+    - How do I install React Native?
+    - What are the installation steps for React Native?
+    - Can you guide me through the installation process of React Native?
+
+- intent: ask_lesson_plan
+  examples: |
+    - How do I create a lesson plan for [subject]?
+    - What should I include in my lesson plan?
+    - Can you provide tips for effective lesson planning?
+
+- intent: ask_classroom_management
+  examples: |
+    - How can I manage disruptive behavior in the classroom?
+    - What strategies can I use to keep students engaged?
+    - Any tips for maintaining discipline during class?
+
+- intent: ask_grading
+  examples: |
+    - How should I grade [assignment/exam]?
+    - What's the best way to provide feedback on student work?
+    - Can you suggest tools for online grading and assessment?
+
+- intent: ask_student_support
+  examples: |
+    - How can I support struggling students?
+    - What resources are available for students with learning difficulties?
+    - Any advice for fostering a supportive classroom environment?
+
+- intent: ask_professional_development
+  examples: |
+    - How can I further develop my teaching skills?
+    - Are there any workshops or conferences I should attend?
+    - Can you recommend online courses for educators?
+
+- intent: ask_technology_integration
+  examples: |
+    - How can I effectively integrate technology into my lessons?
+    - What are some educational apps or tools I can use?
+    - Any tips for troubleshooting tech issues in the classroom?
+
+- intent: ask_parent_communication
+  examples: |
+    - How should I communicate with parents about student progress?
+    - What's the best way to handle parent-teacher conferences?
+    - Can you provide tips for building positive relationships with parents?
+
+
+- intent: ask_efficient_teaching_tips
+  examples: |
+    - Can you provide tips for teaching more efficiently?
+    - I need advice on how to teach more effectively.
+    - What are some strategies for efficient teaching?
+    - How can I optimize my teaching methods?
+    - Tips for improving teaching productivity?
+    - Any suggestions for making teaching more efficient?
+    - Ways to streamline teaching processes?
+    - Advice on maximizing teaching effectiveness?
+    - How to be a more efficient teacher?
+    - Techniques for time-efficient teaching?
+
+- intent: ask_about_bot
+  examples: |
+    - How r u?
+    - How are you?
+    - How are you today?
+    - What's up?
+    - Are you feeling okay?
+    - How's everything going?
+    - How's your day going?
+    - How have you been?
+    - How's life treating you?
+    - What's new with you?
+    - How's your mood?
+    - How are things on your end?
+    - How are you feeling lately?
+    - How's your health?
+    - How's your day been so far?
+    - How's your week going?
+    - How are you holding up?
+    - How's your energy level?
+    - How are things in your world?
+    - How are you doing these days?
+    - How are you feeling emotionally?
+    - How's your spirit today?
+
+- intent: joke_question
+  examples: |
+    - Tell me a joke
+    - Why couldn't the bicycle stand up by itself?
+    - Do you know any good jokes?
+    - Can you tell me something funny?
+    - Got any jokes for me?
+    - Share a joke with me
+    - I could use a laugh, tell me a joke
+    - How about a joke to lighten the mood?
+    - What's a good joke you know?
+    - Hit me with a joke!
+    - Entertain me with a joke
+
+- intent: tell_me_about_your_app
+  examples: |
+    - What is your app about?
+    - What does your app do?
+    - Can you tell me about your app?
+    - What is your app all about?
+    - What can I do with your app?
+    - Please describe your app.
+    - I'd like to know more about your app.
+    - What are the features of your app?
+    - Tell me about the purpose of your app.
+    - What problem does your app solve?
+    - Explain your app to me.
+    - Could you give me an overview of your app?
+    - What are the functionalities of your app?
+    - I'm curious about your app, could you provide some information?
+    - How does your app work?
+    - Can you give me some details about your app?
+    - I want to learn more about your app.
+    - Could you briefly explain your app to me?
+    - What are the main capabilities of your app?
+    - Please provide some information about your app.
+  
+- intent: ask_mentor
+  examples: |
+    - Who is your Mentor?
+    - Who guided you?
+    - Name of your mentor?
+
+- intent: ask_teammember
+  examples: |
+    - Team members in your group?
+    - Names of team members?

@@ -1,0 +1,142 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: thanks
+  steps:
+  - intent: thank
+  - action: utter_thank
+
+- story: user ask about react native
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_reactnative
+  - action: utter_ask_reactnative_info
+  - action: utter_did_that_help
+
+- story: user ask about how to install react native installation
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_installation
+  - action: utter_ask_installation
+  - action: utter_did_that_help
+
+- story: Lesson Planning
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: ask_lesson_plan
+    - action: utter_lesson_plan
+
+- story: Classroom Management
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: ask_classroom_management
+    - action: utter_classroom_management
+
+- story: Grading and Assessments
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: ask_grading
+    - action: utter_grading
+
+- story: Student Support
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: ask_student_support
+    - action: utter_student_support
+
+- story: Professional Development
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: ask_professional_development
+    - action: utter_professional_development
+
+- story: Technology Integration
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: ask_technology_integration
+    - action: utter_technology_integration
+
+- story: Parent Communication
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: ask_parent_communication
+    - action: utter_parent_communication
+
+- story: Provide teaching tips
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: ask_efficient_teaching_tips
+    - action: utter_teaching_tips
+
+- story: bot's mood 
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: ask_about_bot
+    - action: utter_about_bot
+
+- story: bot's mood 
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: joke_question
+    - action: utter_jokes
+
+- story: user ask for app info 
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: tell_me_about_your_app
+    - action: utter_appinfo
+
+- story: user ask about team members 
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: ask_teammember
+    - action: utter_teammembers
+
+- story: user ask about mentor 
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: ask_mentor
+    - action: utter_mentor

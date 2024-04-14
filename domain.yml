@@ -1,0 +1,122 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - thank
+  - ask_reactnative
+  - ask_installation
+  - ask_lesson_plan
+  - ask_classroom_management
+  - ask_grading
+  - ask_student_support
+  - ask_professional_development
+  - ask_technology_integration
+  - ask_parent_communication
+  - ask_efficient_teaching_tips
+  - ask_about_bot
+  - joke_question
+  - tell_me_about_your_app
+  - ask_mentor
+  - ask_teammember
+
+responses:
+  utter_ask_reactnative_info:
+  - text: |
+      Sure! Here's some information about React Native:
+      React Native is an open-source mobile application framework developed by Facebook. It allows developers to build mobile apps using JavaScript and React, enabling them to write code once and deploy it across multiple platforms.
+  
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by CampusConnect."
+
+  utter_thank:
+  - text: "Welcome"
+
+  utter_ask_installation:
+  - text: "To install React Native, you can follow the official documentation on the React Native website."
+
+  utter_lesson_plan:
+  - text: "Creating a lesson plan for [subject] involves outlining the objectives, determining the instructional activities, preparing materials, and assessing student learning outcomes."
+
+  utter_classroom_management:
+  - text: "Effective classroom management strategies include establishing clear expectations, enforcing consistent rules, fostering positive relationships, and addressing behavior issues promptly."
+
+  utter_grading:
+  - text: "When grading [assignment/exam], consider the assessment criteria, provide constructive feedback, maintain fairness and consistency, and offer opportunities for improvement."
+
+  utter_student_support:
+  - text: "Supporting struggling students requires identifying their individual needs, offering additional assistance, providing resources for remediation, and monitoring progress closely."
+
+  utter_professional_development:
+  - text: "To further develop your teaching skills, you might attend workshops, participate in professional learning communities, pursue advanced certifications, or engage in reflective practices."
+
+  utter_technology_integration:
+  - text: "Integrating technology into your lessons can be done by incorporating interactive presentations, using educational apps and software, facilitating online discussions, and promoting digital literacy skills."
+
+  utter_parent_communication:
+  - text: "Communicating with parents about student progress can be approached by scheduling regular meetings, sending progress reports, establishing open channels of communication, and addressing concerns promptly."
+
+  utter_teaching_tips:
+  - text: |
+      Here are some tips for efficient teaching:
+      1. Set Clear Learning Objectives
+      2. Use Active Learning Techniques
+      3. Provide Timely Feedback
+      4. Utilize Technology
+      5. Organize Content Effectively
+      6. Encourage Collaboration
+      7. Adapt Teaching Methods
+      8. Manage Time Wisely
+      9. Promote Student Engagement
+      10. Reflect and Improve
+
+  utter_about_bot:
+  - text: "I'm just a computer program, so I don't have feelings like humans do. But thank you for asking! How can I assist you today?"
+
+  utter_jokes:
+  - text: "Why did the computer go to therapy? Because it had too many bytes of emotional baggage."
+  - text: "Why was the math book sad? Because it had too many problems."
+  - text: "Why do programmers prefer dark mode? Because light attracts bugs."
+  - text: "Why did the engineer bring a ladder to the bar? Because he heard the drinks were on the house."
+  - text: "Why do engineers make bad comedians? Because they can't handle the pressure."
+  - text: "Why don't programmers like nature? It has too many bugs."
+  - text: "Why did the engineer break up with his calculator? Because it couldn't handle his problems."
+  - text: "Why did the circuit go to school? To get a little ohm work."
+
+  utter_appinfo:
+  - text: "CampusConnect keeps educators connected with students, providing real-time access to student details ,AI chatbot for support and seamless communication tools"
+
+  utter_mentor:
+  - text: "Mrs. Kshipra Mokashi"
+
+  utter_teammembers:
+  - text: "Akshay, Sairaj, Dhwani, Heena"
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+
+

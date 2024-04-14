@@ -1,0 +1,4 @@
+form_ask_definition:
+  - type: from_text
+    entity: something
+    intent: ask_definition
